@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Zarif Flower Design</title>
+<style>
+  body { font-family: Arial, sans-serif; margin:0; background:#fff8f0; color:#444; }
+  header { background:#e2b8a3; padding:20px; text-align:center; color:#fff; font-size:2.5rem; font-weight:700; }
+  nav { display:flex; justify-content:center; gap:30px; padding:10px 0; background:#f5dfd7;}
+  nav a { color:#5a2a17; text-decoration:none; font-weight:600; }
+  nav a:hover { text-decoration:underline; }
+  section { padding:40px 20px; max-width:900px; margin:0 auto; }
+  h2 { color:#a85844; font-size:2rem; margin-bottom:20px; }
+  .gallery { display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:15px; }
+  .gallery img { width:100%; border-radius:12px; box-shadow:0 2px 5px rgba(0,0,0,0.1); }
+  .contact { background:#f5dfd7; padding:20px; border-radius:10px; margin-top:40px; }
+  footer { text-align:center; padding:15px 0; background:#e2b8a3; color:#fff; margin-top:40px;}
+  button { background:#a85844; color:#fff; border:none; padding:12px 25px; border-radius:30px; cursor:pointer; font-size:1rem; font-weight:600;}
+  button:hover { background:#854534;}
+  input, textarea { width:100%; padding:12px; border:1px solid #ccc; border-radius:8px; margin-top:8px; margin-bottom:20px; font-size:1rem; }
+</style>
+</head>
+<body>
+<header>Zarif Flower Design</header>
+<nav>
+  <a href="#home">Ana Sayfa</a>
+  <a href="#gallery">Galerimiz</a>
+  <a href="#contact">İletişim</a>
+</nav>
+<section id="home">
+  <h2>Hoş Geldiniz!</h2>
+  <p>Zarif Flower Design ile hayatınıza renk katacak zarif çiçekler ve buketler sunuyoruz. Özel günlerinizi unutulmaz kılmak için buradayız.</p>
+</section>
+<section id="gallery">
+  <h2>Ürün Galerisi</h2>
+  <div class="gallery">
+    <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Gül Buketi" />
+    <img src="https://images.unsplash.com/photo-1465188035480-6a32f048b52b?auto=format&fit=crop&w=400&q=80" alt="Orkide" />
+    <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=400&q=80" alt="Papatya" />
+    <img src="https://images.unsplash.com/photo-1465311442599-702b291efa88?auto=format&fit=crop&w=400&q=80" alt="Lale" />
+  </div>
+</section>
+<section id="contact">
+  <h2>İletişim</h2>
+  <form action="mailto:zarifflowerdesign@example.com" method="POST" enctype="text/plain">
+    <label>Adınız:</label>
+    <input type="text" name="name" required />
+    <label>E-posta:</label>
+    <input type="email" name="email" required />
+    <label>Mesajınız:</label>
+    <textarea name="message" rows="5" required></textarea>
+    <button type="submit">Gönder</button>
+  </form>
+</section>
+<footer>
+  &copy; 2025 Zarif Flower Design - Tüm Hakları Saklıdır.
+</footer>
+</body>
+</html>
